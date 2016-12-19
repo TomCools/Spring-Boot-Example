@@ -1,4 +1,4 @@
-package be.tomcools.account.service.resource;
+package be.tomcools.core.api.account;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
