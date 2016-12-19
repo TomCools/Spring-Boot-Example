@@ -1,0 +1,12 @@
+server:
+  port: 2222
+eureka:
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8888/eureka
+  instance:
+    lease-renewal-interval-in-seconds: 5
+spring:
+  application:
+    name: account-service
