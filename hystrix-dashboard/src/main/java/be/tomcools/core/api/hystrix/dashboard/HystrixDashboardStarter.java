@@ -1,4 +1,4 @@
-package be.tomcools.hystrix.dashboard; /**
+package be.tomcools.core.api.hystrix.dashboard; /**
  * Created by tomco on 18/12/2016.
  */
 

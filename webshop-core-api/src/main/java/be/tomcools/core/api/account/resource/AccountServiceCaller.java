@@ -1,4 +1,4 @@
-package be.tomcools.resource;
+package be.tomcools.core.api.account.resource;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;

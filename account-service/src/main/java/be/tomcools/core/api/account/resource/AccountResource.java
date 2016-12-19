@@ -1,7 +1,7 @@
-package be.tomcools.resource;
+package be.tomcools.core.api.account.resource;
 
-import be.tomcools.Account;
-import be.tomcools.repository.AccountRepository;
+import be.tomcools.core.api.Account;
+import be.tomcools.core.api.repository.AccountRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

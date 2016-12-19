@@ -1,4 +1,4 @@
-package be.tomcools.servicediscovery;
+package be.tomcools.core.api.servicediscovery;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

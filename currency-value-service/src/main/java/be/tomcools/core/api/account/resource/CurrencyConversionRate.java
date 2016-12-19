@@ -1,4 +1,4 @@
-package be.tomcools.resource;
+package be.tomcools.core.api.account.resource;
 
 /**
  * Created by tomco on 19/12/2016.

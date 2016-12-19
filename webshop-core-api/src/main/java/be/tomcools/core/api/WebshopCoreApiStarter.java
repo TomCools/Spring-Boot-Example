@@ -1,4 +1,4 @@
-package be.tomcools;
+package be.tomcools.core.api;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -12,10 +12,10 @@ import org.springframework.web.client.RestTemplate;
 @EnableCircuitBreaker
 @EnableDiscoveryClient
 @SpringBootApplication
-public class AccountResourceStarter {
+public class WebshopCoreApiStarter {
 
     public static void main(String[] args) {
-        SpringApplication.run(AccountResourceStarter.class, args);
+        SpringApplication.run(WebshopCoreApiStarter.class, args);
     }
 
     @Bean

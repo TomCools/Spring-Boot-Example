@@ -1,6 +1,6 @@
-package be.tomcools.repository;
+package be.tomcools.core.api.repository;
 
-import be.tomcools.Account;
+import be.tomcools.core.api.Account;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

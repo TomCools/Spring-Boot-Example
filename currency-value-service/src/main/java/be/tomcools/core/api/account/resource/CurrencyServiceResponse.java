@@ -1,4 +1,4 @@
-package be.tomcools.resource;
+package be.tomcools.core.api.account.resource;
 
 import java.util.Map;
 
