@@ -1,4 +1,4 @@
-package be.tomcools.core.api.account.resource;
+package be.tomcools.currency.resource;
 
 /**
  * Created by tomco on 19/12/2016.

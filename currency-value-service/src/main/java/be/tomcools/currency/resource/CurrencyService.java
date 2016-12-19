@@ -1,4 +1,4 @@
-package be.tomcools.core.api.account.resource;
+package be.tomcools.currency.resource;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

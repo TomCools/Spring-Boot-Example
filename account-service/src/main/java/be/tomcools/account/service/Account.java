@@ -1,4 +1,4 @@
-package be.tomcools.core.api;
+package be.tomcools.account.service;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

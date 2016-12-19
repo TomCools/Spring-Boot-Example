@@ -1,6 +1,6 @@
-package be.tomcools.core.api;
+package be.tomcools.account.service;
 
-import be.tomcools.core.api.repository.AccountRepository;
+import be.tomcools.account.service.repository.AccountRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package be.tomcools.core.api.account.resource;
+package be.tomcools.account.service.resource;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
