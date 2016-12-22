@@ -6,6 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.servlet.http.HttpServletRequest;
+import java.security.Principal;
 
 public class LoggingFilter extends ZuulFilter {
     private static Logger log = LoggerFactory.getLogger(LoggingFilter.class);
@@ -29,8 +30,9 @@ public class LoggingFilter extends ZuulFilter {
     public Object run() {
         RequestContext ctx = RequestContext.getCurrentContext();
         HttpServletRequest request = ctx.getRequest();
+        Principal principal = request.getUserPrincipal();
 
-        log.info(String.format("%s request to %s", request.getMethod(), request.getRequestURL().toString()));
+        log.info(String.format("%s request to %s for user %s", request.getMethod(), request.getRequestURL().toString(), principal.getName()));
 
         return null;
     }
