@@ -1,16 +1,15 @@
 package be.tomcools.core.api;
 
+import be.tomcools.core.api.zuul.LoggingFilter;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.client.loadbalancer.LoadBalanced;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 import org.springframework.context.annotation.Bean;
-import org.springframework.web.client.RestTemplate;
 
-@EnableCircuitBreaker
 @EnableDiscoveryClient
+@EnableZuulProxy
 @SpringBootApplication
 public class WebshopCoreApiStarter {
 
@@ -19,13 +18,12 @@ public class WebshopCoreApiStarter {
     }
 
     @Bean
-    @LoadBalanced
-    public RestTemplate restTemplate() {
-        return new RestTemplate();
+    CommandLineRunner onStartup() {
+        return (String[] args) -> System.out.println("I'm starting! :-)");
     }
 
     @Bean
-    CommandLineRunner onStartup() {
-        return (String[] args) -> System.out.println("I'm starting! :-)");
+    LoggingFilter loggingFilter() {
+        return new LoggingFilter();
     }
 }
