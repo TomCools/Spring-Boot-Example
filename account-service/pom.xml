@@ -39,5 +39,7 @@
         </dependency>
     </dependencies>
 
-
+    <build>
+        <finalName>account-service</finalName>
+    </build>
 </project>

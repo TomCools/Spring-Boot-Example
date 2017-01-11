@@ -23,5 +23,9 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <finalName>eureka-service-discovery</finalName>
+    </build>
+
 
 </project>

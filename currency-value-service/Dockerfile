@@ -1,8 +1,8 @@
 FROM java:8
 
-COPY target/webshop-core-api.jar webshop-core-api.jar
+COPY target/currency-service.jar currency-service.jar
 
-CMD java -Dserver.port=80 -Dmanagement.port=81 -Deureka.client.service-url.defaultZone=http://$EUREKA_SERVER/eureka -Deureka.instance.prefer-ip-address=true -Deureka.instance.ip-address=$HOST_IP_ADRESS  -Deureka.instance.non-secure-port=$HOST_PORT -jar webshop-core-api.jar
+CMD java -Dserver.port=80 -Dmanagement.port=81 -Deureka.client.service-url.defaultZone=http://$EUREKA_SERVER/eureka -Deureka.instance.prefer-ip-address=true -Deureka.instance.ip-address=$HOST_IP_ADRESS  -Deureka.instance.non-secure-port=$HOST_PORT -jar currency-service.jar
 
 EXPOSE 80 81
 
