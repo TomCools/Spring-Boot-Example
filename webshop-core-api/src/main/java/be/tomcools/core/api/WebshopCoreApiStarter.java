@@ -26,4 +26,5 @@ public class WebshopCoreApiStarter {
     LoggingFilter loggingFilter() {
         return new LoggingFilter();
     }
+
 }

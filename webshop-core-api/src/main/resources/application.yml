@@ -5,6 +5,8 @@ server:
   port: 1111
 management:
   port: 1112
+zuul:
+  prefix: /api
 eureka:
   client:
     register-with-eureka: true
